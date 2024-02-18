@@ -1,0 +1,24 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'flowbite/css/flowbite.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAV */
+nav {
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
+/* TITLE */
+.name {
+    color: hsl(224, 89%, 60%);
+}
+
+.textos-main p {
+    margin-bottom: 25px;
+}
