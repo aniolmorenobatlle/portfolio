@@ -7,6 +7,20 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* BUTTON DARK */
+html.dark {
+    background-color: rgba(31, 41, 55, 1);
+}
+
+html.dark .dark\:ml-6 {
+    margin-left: 1.5rem;
+}
+
+html.dark .dark\:bg-blue-500 {
+    background-color: rgba(59, 130, 246, 1);
 }
 
 /* NAV */
@@ -21,4 +35,39 @@ nav {
 
 .textos-main p {
     margin-bottom: 25px;
+}
+
+/* ABOUT ME */
+.about-me h2 {
+    color: hsl(224, 89%, 60%);
+    position: relative;
+    display: inline-block;
+}
+
+.about-me h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 50%;
+    height: 3px;
+    background-color: hsl(224, 89%, 60%);
+    transform: translateX(-50%);
+}
+
+#about-me .content {
+    margin-top: 50px;
+}
+
+#about-me .text {
+    margin-left: 50px;
+    font-size: 1.2rem;
+}
+
+#about-me .text p {
+    margin-bottom: 25px;
+}
+
+#about-me .content p a {
+    color: hsl(224, 89%, 60%);
 }
