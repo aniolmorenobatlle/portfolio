@@ -1,18 +1,19 @@
 {
-  "name": "web-v.4",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "autoprefixer": "^10.4.17",
-    "flowbite": "^2.3.0",
-    "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1"
-  }
+    "name": "web-v.4",
+    "version": "1.0.0",
+    "description": "Aquest es el meu portfolio fet amb Tailwind CSS.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "autoprefixer": "^10.4.17",
+        "flowbite": "^2.3.0",
+        "postcss": "^8.4.35",
+        "tailwindcss": "^3.4.1"
+    },
+    "devDependencies": {}
 }

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="stylesheet" href="/assets/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
 
         <!-- ===== ICONS ===== -->
         <link
@@ -36,14 +37,12 @@
     </head>
 
     <body class="dark:bg-gray-900 dark:text-white">
-        <nav
-            class="bg-white border-gray-200 dark:bg-gray-800 fixed w-full top-0 z-10"
-        >
+        <nav class="bg-white border-gray-200 dark:bg-gray-800 top-0">
             <div
                 class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
             >
                 <a
-                    href="https://flowbite.com/"
+                    href="/"
                     class="flex items-center space-x-3 rtl:space-x-reverse"
                 >
                     <span
@@ -108,7 +107,7 @@
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="#contact"
                                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 dark:text-white md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                             >
                                 Contacte
@@ -133,7 +132,7 @@
 
         <!--===== Inici =====-->
         <section
-            class="flex flex-col items-center justify-center h-screen text-center"
+            class="flex flex-col items-center justify-center lg:h-screen text-center"
             id="home"
         >
             <div
@@ -151,7 +150,7 @@
                     type="button"
                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
                 >
-                    <a href="#contacte">Contacte</a>
+                    <a href="#contact">Contacte</a>
                 </button>
             </div>
 
@@ -174,18 +173,18 @@
         </section>
 
         <!--===== Sobre Mi =====-->
-        <section class="flex flex-col items-center" id="about-me">
-            <div class="about-me">
+        <section class="flex-col items-center" id="about-me">
+            <div class="subtitle text-center">
                 <h2 class="text-4xl font-bold">Sobre Mi</h2>
             </div>
 
-            <div class="content flex items-center">
+            <div class="content flex items-center justify-center">
                 <img
                     src="/assets/img/amoreno.jpg"
                     title="Aniol Moreno Batlle"
                     class="rounded-lg"
                 />
-                <div class="text w-1/4">
+                <div class="text">
                     <p>Sóc desenvolupador web i fànatic de la programació.</p>
                     <p>Tinc 4 anys d'experiencia en el sector informatic.</p>
                     <p>
@@ -199,6 +198,88 @@
                         </a>
                     </p>
                 </div>
+            </div>
+        </section>
+
+        <br />
+        <br />
+
+        <!--===== Contact ME  =====-->
+        <section class="flex-col items-center" id="contact">
+            <div class="subtitle text-center">
+                <h2 class="text-4xl font-bold">Contacte</h2>
+            </div>
+
+            <div class="px-4 mx-auto lg:w-1/4 md:w-2/3">
+                <form
+                    action="https://formsubmit.co/b45270b8fa8e5fdda8d5b9f4039c3f98"
+                    method="POST"
+                >
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none" />
+
+                    <!-- Eliminar Captcha -->
+                    <input type="hidden" name="_captcha" value="false" />
+
+                    <!-- Redireccio pagina de success -->
+                    <input
+                        type="hidden"
+                        name="_next"
+                        value="https://aniolmorenobatlle.com/complete.html"
+                    />
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input
+                            type="text"
+                            name="Name"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" "
+                            required
+                        />
+                        <label
+                            for="name"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        >
+                            Nom
+                        </label>
+                    </div>
+
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input
+                            type="mail"
+                            name="Mail"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" "
+                            required
+                        />
+                        <label
+                            for="name"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        >
+                            Mail
+                        </label>
+                    </div>
+
+                    <div class="relative z-0 w-full mb-5 group">
+                        <textarea
+                            name="Message"
+                            class="block py-2.5 px-0 w-full h-20 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 resize-none appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" "
+                            required
+                        ></textarea>
+                        <label
+                            for="message"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        >
+                            Missatge
+                        </label>
+                    </div>
+                    <button
+                        type="submit"
+                        class="w-full py-3 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                    >
+                        Enviar
+                    </button>
+                </form>
             </div>
         </section>
 

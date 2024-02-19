@@ -1,13 +1,33 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
 @import 'flowbite/css/flowbite.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+/* GLOBAL */
+:root {
+    --main-color: hsl(224, 89%, 60%);
+}
+
 * {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+}
+
+.subtitle h2 {
+    color: var(--main-color);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.subtitle h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 50%;
+    height: 3px;
+    background-color: var(--main-color);
+    transform: translateX(-50%);
 }
 
 /* BUTTON DARK */
@@ -25,12 +45,15 @@ html.dark .dark\:bg-blue-500 {
 
 /* NAV */
 nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
 /* TITLE */
 .name {
-    color: hsl(224, 89%, 60%);
+    color: var(--main-color);
 }
 
 .textos-main p {
@@ -38,27 +61,6 @@ nav {
 }
 
 /* ABOUT ME */
-.about-me h2 {
-    color: hsl(224, 89%, 60%);
-    position: relative;
-    display: inline-block;
-}
-
-.about-me h2::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    width: 50%;
-    height: 3px;
-    background-color: hsl(224, 89%, 60%);
-    transform: translateX(-50%);
-}
-
-#about-me .content {
-    margin-top: 50px;
-}
-
 #about-me .text {
     margin-left: 50px;
     font-size: 1.2rem;
@@ -69,5 +71,25 @@ nav {
 }
 
 #about-me .content p a {
-    color: hsl(224, 89%, 60%);
+    color: var(--main-color);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1023px) {
+    #home {
+        margin-top: 30%;
+        margin-bottom: 25%;
+    }
+}
+
+@media (max-width: 640px) {
+    #about-me .text {
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-left: 0;
+    }
+
+    #about-me .content img {
+        display: none;
+    }
 }
