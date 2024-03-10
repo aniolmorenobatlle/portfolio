@@ -31,6 +31,22 @@
             rel="stylesheet"
         />
 
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
         <link rel="icon" href="/favicon.png" type="image/x-icon" />
 
         <title>Aniol Moreno Batlle</title>
@@ -91,15 +107,7 @@
                         </li>
                         <li>
                             <a
-                                href="#"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 dark:text-white md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                            >
-                                Habilitats
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
+                                href="#treballs"
                                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 dark:text-white md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                             >
                                 Treballs
@@ -113,7 +121,7 @@
                                 Contacte
                             </a>
                         </li>
-                        <li class="h-0">
+                        <li>
                             <button
                                 title="Toggle Theme"
                                 onclick="theme()"
@@ -172,46 +180,143 @@
             </div>
         </section>
 
-        <!--===== Sobre Mi =====-->
-        <section class="flex-col items-center" id="about-me">
-            <div class="subtitle text-center">
-                <h2 class="text-4xl font-bold">Sobre Mi</h2>
-            </div>
-
-            <div class="content flex items-center justify-center">
-                <img
-                    src="/assets/img/amoreno.jpg"
-                    title="Aniol Moreno Batlle"
-                    class="rounded-lg"
-                />
-                <div class="text">
-                    <p>Sóc desenvolupador web i fànatic de la programació.</p>
-                    <p>Tinc 4 anys d'experiencia en el sector informatic.</p>
-                    <p>
-                        Descarga't el meu
-                        <a
-                            href="assets/curriculum.pdf"
-                            download="Currículum Aniol Moreno.pdf"
-                            target="_blank"
-                        >
-                            Currículum.
-                        </a>
-                    </p>
+        <main class="mx-auto lg:w-2/3">
+            <!--===== Sobre Mi =====-->
+            <section class="flex-col items-center" id="about-me">
+                <div class="subtitle text-center">
+                    <h2 class="text-4xl font-bold">Sobre Mi</h2>
                 </div>
-            </div>
-        </section>
 
-        <br />
-        <br />
+                <div class="content flex items-center justify-center">
+                    <img
+                        src="/assets/img/amoreno.jpg"
+                        alt="Aniol Moreno Batlle"
+                        title="Aniol Moreno Batlle"
+                        class="rounded-lg"
+                    />
+                    <div class="text">
+                        <p>
+                            Sóc desenvolupador web i fànatic de la programació.
+                        </p>
+                        <p>
+                            Tinc 4 anys d'experiencia en el sector informatic.
+                        </p>
+                        <p>
+                            Descarga't el meu
+                            <a
+                                href="assets/curriculum.pdf"
+                                download="Currículum Aniol Moreno.pdf"
+                                target="_blank"
+                            >
+                                Currículum.
+                            </a>
+                        </p>
+                    </div>
+                </div>
 
-        <!--===== Treballs =====-->
-        <section class="flex-col items-center" id="treballs">
-            <div class="subtitle text-center">
-                <h2 class="text-4xl font-bold">Treballs</h2>
-            </div>
+                <br />
+                <br />
 
-            <div class="content flex items-center justify-center">
-                <div class="accordion rounded-lg shadow-md">
+                <div class="owl-carousel owl-theme text-center flex-col">
+                    <div class="item">
+                        <img
+                            src="/assets/icons/html.png"
+                            alt="HTML"
+                            title="HTML"
+                        />
+                    </div>
+                    <div class="item">
+                        <img
+                            src="/assets/icons/css.png"
+                            alt="CSS"
+                            title="CSS"
+                        />
+                    </div>
+                    <div class="item">
+                        <img
+                            src="/assets/icons/js.png"
+                            alt="JAVASCRIPT"
+                            title="JavaScript"
+                        />
+                    </div>
+                    <div class="item">
+                        <img
+                            src="/assets/icons/php.png"
+                            alt="PHP"
+                            title="PHP"
+                        />
+                    </div>
+                    <div class="item">
+                        <img
+                            src="/assets/icons/java.png"
+                            alt="JAVA"
+                            title="Java"
+                        />
+                    </div>
+                    <div class="item">
+                        <img
+                            src="/assets/icons/docker.svg"
+                            alt="DOCKER"
+                            title="Docker"
+                        />
+                    </div>
+                    <div class="item">
+                        <img
+                            src="/assets/icons/tailwind.png"
+                            alt="TAILWINND"
+                            title="Tailwind"
+                        />
+                    </div>
+                    <div class="item">
+                        <img
+                            src="/assets/icons/bootstrap.png"
+                            alt="BOOTSTRAP"
+                            title="Bootstrap"
+                        />
+                    </div>
+                    <div class="item">
+                        <img
+                            src="/assets/icons/laravel.png"
+                            alt="LARAVEL"
+                            title="Laravel"
+                        />
+                    </div>
+                    <div class="item">
+                        <img
+                            src="/assets/icons/vue.png"
+                            alt="VUE"
+                            title="Vue"
+                        />
+                    </div>
+                    <div class="item">
+                        <img
+                            src="/assets/icons/liquid.png"
+                            alt="LIQUID"
+                            title="Liquid"
+                        />
+                    </div>
+                    <div class="item">
+                        <img
+                            src="/assets/icons/python.png"
+                            alt="PYTHON"
+                            title="Python"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <br />
+            <br />
+
+            <!--===== Treballs =====-->
+            <section class="flex-col items-center" id="treballs">
+                <div class="subtitle text-center">
+                    <h2 class="text-4xl font-bold">Treballs</h2>
+                </div>
+
+                <div
+                    class="accordion lg:rounded-lg md:rounded-lg sm:rounded-none shadow-md"
+                >
                     <ul>
                         <li>
                             <div>
@@ -270,90 +375,96 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <br />
-        <br />
+            <br />
+            <br />
 
-        <!--===== Contact ME  =====-->
-        <section class="flex-col items-center" id="contact">
-            <div class="subtitle text-center">
-                <h2 class="text-4xl font-bold">Contacte</h2>
-            </div>
+            <!--===== Contact ME  =====-->
+            <section class="flex-col items-center" id="contact">
+                <div class="subtitle text-center">
+                    <h2 class="text-4xl font-bold">Contacte</h2>
+                </div>
 
-            <div class="px-4 mx-auto lg:w-1/4 md:w-2/3">
-                <form
-                    action="https://formsubmit.co/b45270b8fa8e5fdda8d5b9f4039c3f98"
-                    method="POST"
+                <div
+                    class="items-center justify-center mx-auto lg:w-1/3 md:w-2/3"
                 >
-                    <!-- Honeypot -->
-                    <input type="text" name="_honey" style="display: none" />
-
-                    <!-- Eliminar Captcha -->
-                    <input type="hidden" name="_captcha" value="false" />
-
-                    <!-- Redireccio pagina de success -->
-                    <input
-                        type="hidden"
-                        name="_next"
-                        value="https://aniolmorenobatlle.com/complete.html"
-                    />
-                    <div class="relative z-0 w-full mb-5 group">
+                    <form
+                        action="https://formsubmit.co/b45270b8fa8e5fdda8d5b9f4039c3f98"
+                        method="POST"
+                    >
+                        <!-- Honeypot -->
                         <input
                             type="text"
-                            name="Name"
-                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                            placeholder=" "
-                            required
+                            name="_honey"
+                            style="display: none"
                         />
-                        <label
-                            for="name"
-                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                        >
-                            Nom
-                        </label>
-                    </div>
 
-                    <div class="relative z-0 w-full mb-5 group">
+                        <!-- Eliminar Captcha -->
+                        <input type="hidden" name="_captcha" value="false" />
+
+                        <!-- Redireccio pagina de success -->
                         <input
-                            type="mail"
-                            name="Mail"
-                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                            placeholder=" "
-                            required
+                            type="hidden"
+                            name="_next"
+                            value="https://aniolmorenobatlle.com/complete.html"
                         />
-                        <label
-                            for="name"
-                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                        >
-                            Mail
-                        </label>
-                    </div>
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input
+                                type="text"
+                                name="Name"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder=" "
+                                required
+                            />
+                            <label
+                                for="name"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                            >
+                                Nom
+                            </label>
+                        </div>
 
-                    <div class="relative z-0 w-full mb-5 group">
-                        <textarea
-                            name="Message"
-                            class="block py-2.5 px-0 w-full h-20 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 resize-none appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                            placeholder=" "
-                            required
-                        ></textarea>
-                        <label
-                            for="message"
-                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input
+                                type="mail"
+                                name="Mail"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder=" "
+                                required
+                            />
+                            <label
+                                for="name"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                            >
+                                Mail
+                            </label>
+                        </div>
+
+                        <div class="relative z-0 w-full mb-5 group">
+                            <textarea
+                                name="Message"
+                                class="block py-2.5 px-0 w-full h-20 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 resize-none appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder=" "
+                                required
+                            ></textarea>
+                            <label
+                                for="message"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                            >
+                                Missatge
+                            </label>
+                        </div>
+                        <button
+                            type="submit"
+                            class="w-full py-3 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
                         >
-                            Missatge
-                        </label>
-                    </div>
-                    <button
-                        type="submit"
-                        class="w-full py-3 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                    >
-                        Enviar
-                    </button>
-                </form>
-            </div>
-        </section>
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
 
         <br />
         <br />
@@ -384,13 +495,25 @@
                 </span>
                 <hr class="my-4 border-gray-700" />
                 <span class="block text-sm text-gray-400 text-center">
-                    © Aniol Moreno Batlle. Tots els drets reservats.
+                    © Aniol Moreno Batlle
                 </span>
             </div>
         </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
         <script src="/assets/js/dark.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
         <script src="/assets/js/main.js"></script>
     </body>
 </html>
