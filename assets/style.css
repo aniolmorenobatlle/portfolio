@@ -60,17 +60,26 @@ html.dark .dark\:bg-blue-500 {
     margin-bottom: 25px;
 }
 
+/* NAV */
+select {
+    padding: 10px;
+    border-radius: 5px !important;
+    border: 1px solid #ccc !important;
+}
+
+select options {
+    padding: 10px;
+    border-radius: 5px !important;
+    border: 1px solid #ccc !important;
+}
+
 /* ABOUT ME */
 #about-me .text {
     margin-left: 50px;
     font-size: 1.2rem;
 }
 
-#about-me .text p {
-    margin-bottom: 25px;
-}
-
-#about-me .content p a {
+.cv {
     color: var(--main-color);
 }
 
@@ -208,7 +217,7 @@ html.dark .dark\:bg-blue-500 {
 
 /* RESPONSIVE */
 @media (max-width: 767px) {
-    .dark-button {
+    .languages {
         margin-top: 2.5rem;
     }
 }
