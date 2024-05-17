@@ -111,6 +111,11 @@ select options {
     display: none;
 }
 
+/* Experiencie */
+.dot-timeline {
+    background-color: var(--main-color);
+}
+
 /* Treballs */
 .accordion {
     width: 100%;

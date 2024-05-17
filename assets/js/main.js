@@ -8,16 +8,16 @@ function theme(event) {
 $('.owl-carousel').owlCarousel({
     loop: true,
     autoplay: true,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 4000,
     responsive: {
         0: {
             items: 4,
         },
         600: {
-            items: 5,
+            items: 4,
         },
         1000: {
-            items: 8,
+            items: 6,
         },
     },
 });
