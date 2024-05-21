@@ -2017,6 +2017,7 @@ select options {
 
 .owl-item {
   width: 50px;
+  height: 50px;
 }
 
 .owl-carousel .item img {
@@ -2162,6 +2163,10 @@ select options {
   .languages {
     margin-top: 2.5rem;
   }
+
+  form {
+    width: 390px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -2176,6 +2181,12 @@ select options {
     form {
     padding-right: 20px;
     padding-left: 20px;
+    margin-left: 0;
+  }
+
+  .ol {
+    padding-right: 30px;
+    padding-left: 30px;
     margin-left: 0;
   }
 
@@ -2506,8 +2517,8 @@ select options {
     margin-top: 0px;
   }
 
-  .md\:w-2\/3 {
-    width: 66.666667%;
+  .md\:w-3\/4 {
+    width: 75%;
   }
 
   .md\:w-auto {
