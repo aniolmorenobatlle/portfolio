@@ -4,10 +4,10 @@ Welcome to my portfolio repository! This repository contains the code for my per
 
 ## Table of Contents
 
-- Overview
-- Features
-- Technologies Used
-- Contact
+- [Overview](https://github.com/aniolmorenobatlle/portfolio#overview)
+- [Features](https://github.com/aniolmorenobatlle/portfolio#features)
+- [Technologies Used](https://github.com/aniolmorenobatlle/portfolio#technologies-used)
+- [Contact](https://github.com/aniolmorenobatlle/portfolio#contact)
 
 ## Overview
 
