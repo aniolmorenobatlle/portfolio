@@ -32,7 +32,7 @@ This portfolio website serves as a digital resume and portfolio to highlight my 
 Feel free to reach out to me through the following channels:
 
 - **Email:** aniolmoreno@gmail.com
-- **LinkedIn:** [aniolmorenobatlle](https://www.linkedin.com/in/aniolmorenobatlle/)
-- **GitHub:** [aniolmorenobatlle](https://www.github.com/aniolmorenobatlle)
+- **LinkedIn:** [https://www.linkedin.com/in/aniol-moreno-batlle](https://www.linkedin.com/in/aniol-moreno-batlle/)
+- **GitHub:** [https://www.github.com/aniolmorenobatlle](https://www.github.com/aniolmorenobatlle)
 
 Thank you for visiting my portfolio repository!
