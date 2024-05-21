@@ -26,7 +26,7 @@ var currentLanguage = localStorage.getItem('language') || 'ca';
 changeLanguage(currentLanguage);
 
 function changeLanguage(language) {
-    fetch('public/assets/languages/translations.json')
+    fetch('/assets/languages/translations.json')
         .then((response) => response.json())
         .then((translations) => {
             var elementsToTranslate =
@@ -44,15 +44,15 @@ function changeLanguage(language) {
 
             switch (language) {
                 case 'ca':
-                    flagImg.src = '/public/assets/languages/catalan_flag.png';
+                    flagImg.src = '/assets/languages/catalan_flag.png';
                     languageName.textContent = 'Català';
                     break;
                 case 'es':
-                    flagImg.src = '/public/assets/languages/spanish_flag.png';
+                    flagImg.src = '/assets/languages/spanish_flag.png';
                     languageName.textContent = 'Español';
                     break;
                 case 'en':
-                    flagImg.src = '/public/assets/languages/english_flag.png';
+                    flagImg.src = '/assets/languages/english_flag.png';
                     languageName.textContent = 'English';
                     break;
             }
