@@ -16,6 +16,18 @@
     scroll-behavior: smooth;
 }
 
+section:not(#home) {
+    margin-bottom: 50px;
+}
+
+i {
+    transition: all 0.3s ease;
+}
+
+i:hover {
+    transform: scale(1.2);
+}
+
 .subtitle h2 {
     color: var(--main-color);
     position: relative;
